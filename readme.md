@@ -8,13 +8,13 @@
 
 ## 一、项目清单
 
-#### 1. [Nginx+HTML分发模版](./nginxdist/)
+#### 1. [Nginx+HTML分发模板](./nginxdist/)
 
-如果你有vue或者其他打包的web的项目，需要使用nginx分发，可以参考此模版，将其中的dist文件夹内容替换成自己的项目内容。
+如果你有vue或者其他打包的web的项目，需要使用nginx分发，可以参考此模板，将其中的dist文件夹内容替换成自己的项目内容。
 
 Nginx分发配置，可以直接修改根目录的 `my.conf`
 
-#### 2. [Nginx+Node分发模版](./nginxnode/)
+#### 2. [Nginx+Node分发模板](./nginxnode/)
 
 如果有一个node项目，同时需要nginx做反向代理，实现一些扩展需求，则可以参考此项目。
 
@@ -22,7 +22,7 @@ Nginx分发配置，可以直接修改根目录的 `my.conf`
 
 Nginx分发配置，可以直接修改根目录的 `my.conf`
 
-#### 3. [PHP中SG11扩展安装模版](./phpsg11)
+#### 3. [PHP中SG11扩展安装模板](./phpsg11)
 
 发问的人比较多，在这里直接写一下，给了一个php单一文件，如果是框架项目，需按需自己修改Dockerfile的安装步骤。
 
@@ -39,7 +39,7 @@ RUN PHP_VERSION=$(php -v | head -n1 | cut -d' ' -f2 | cut -d. -f1-2) \
     && rm -rf /tmp/sourceguardian
 ```
 
-#### 4. [jetty应用模版](./jetty)
+#### 4. [jetty应用模板](./jetty)
 
 如果你需要使用jetty来部署web应用，可以参考此案例。有些同学在podman上可以正常运行，迁移到云托管就一直启动不起来。
 
@@ -47,7 +47,7 @@ RUN PHP_VERSION=$(php -v | head -n1 | cut -d' ' -f2 | cut -d. -f1-2) \
 
 在这里我们提供了一个可以适用于云托管的docker模板，可以自行取用。
 
-#### 5. [Nginx+java-openjdk分发模版](./nginxjava/)
+#### 5. [Nginx+java-openjdk分发模板](./nginxjava/)
 
 如果有一个java项目，一般是springboot或者其他框架项目，构建产物为jar包，同时需要nginx做反向代理，实现一些扩展需求，则可以参考此项目。
 
